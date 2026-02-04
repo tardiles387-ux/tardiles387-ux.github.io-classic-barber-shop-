@@ -1,0 +1,172 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: #111;
+	color: white;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.hero {
+	background: url('images.jfif');
+	text-align: center;
+	padding: 120px 20px;
+	position: relative;
+}
+
+.hero:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+
+.hero h1, .hero p, .hero a {
+	position: relative;
+	z-index: 2;
+	color: white;
+}
+
+.hero h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.hero a {
+	display: inline-block;
+	padding: 15px 25px;
+	background: #25D366;
+	color: white;
+	border-radius: 8px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.hero a:hover {
+	background: #1ebe5b;
+}
+
+.servicios {
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.servicios h2 {
+	margin-bottom: 40px;
+}
+
+.servicios-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.servicio {
+	background: #1c1c1c;
+	padding: 25px;
+	width: 250px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.servicio:hover {
+	transform: translateY(-5px);
+}
+
+.galeria {
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.galeria h2 {
+	margin-bottom: 40px;
+}
+
+.galeria-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.galeria-container img {
+	width: 250px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.galeria-container img:hover {
+	transform: scale(1.05);
+}
+
+.contacto {
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.contacto h2 {
+	margin-bottom: 20px;
+}
+
+.contacto p {
+	margin: 10px 0;
+	font-size: 16px;
+}
+
+.btn-whatsapp {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 15px 25px;
+	background: #25D366;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 8px;
+	transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+	background: #1ebe5b;
+}
+
+@media (max-width: 768px) {
+	.hero h1 {
+		font-size: 32px;
+	}
+
+	.hero p {
+		font-size: 16px;
+	}
+
+	.hero {
+		padding: 80px 20px;
+	}
+
+	.servicios-container, .galeria-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.servicio, .galeria-container img {
+		width: 90%;
+		max-width: 300px;
+	}
+}
+
